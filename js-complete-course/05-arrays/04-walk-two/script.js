@@ -26,6 +26,16 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        let together = "";
+        fruits.forEach(myFunction);
+        function myFunction(item) {
+            together += " " + item
+        }
+        together = together.slice(1);
+        console.log(together);
+        alert(together);
+
+    });
 
 })();
