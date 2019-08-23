@@ -16,11 +16,11 @@
     var today = new Date();
     var time = parseInt((today.getHours()).toString() + (("0" + today.getMinutes()).slice(-2)).toString()
     );
-    console.log(time + " " + typeof(time)); // time with 'hhmm' format. (0000 to 2399)
+    console.log(time + " " + typeof(time)); // time with 'hhmm' format. (0000 to 2359)
 
     if (time < 1730) { // before 0-18h   0000 - 1800
         document.getElementById("target").innerHTML = "Hello";
-    } else {          // after 18h-     1801  2399
+    } else {          // after 18h-     1801  2359
         document.getElementById("target").innerHTML = "Good evening";
     }
 

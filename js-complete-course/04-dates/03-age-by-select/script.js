@@ -28,9 +28,9 @@
 
         let age = year - birthYear;
         if ( (month >= birthMonth) || ((month = birthMonth) && (day >= birthDay)) ) {
-            window.alert("You are " + age + " y.old!" );
+            alert("You are " + age + " y.old!" );
         } else {
-            window.alert("You are " + (age - 1) + " y.old!" )
+            alert("You are " + (age - 1) + " y.old!" )
         }
     });
 

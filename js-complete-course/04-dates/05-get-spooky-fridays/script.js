@@ -24,7 +24,7 @@ let months = ["January", "February", "March", "April", "May", "June", "July", "A
 // check whether 13th of each month is friday
 
 let specialMonths = [];
-
+// check whether 13th of each month is frida
 for(let i=0; i < 12; i++){
     d.setMonth(i);
     if(d.getDay()===5){

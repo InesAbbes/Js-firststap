@@ -21,7 +21,7 @@
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"];
 
-    let formatted_date = days[today.getDay()]     + " "       // Sunday
+    let formatted_date= days[today.getDay()]     + " "       // Sunday
         + today.getDate() + " "                              // 28
         + months[today.getMonth()] + " "                     // OctoberDay
         + today.getFullYear()+ ", "                           // 2018
