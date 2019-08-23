@@ -10,7 +10,29 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function() {
+        // get the birth date of the visitor
+        let birthDay = document.getElementById("dob-day").value;
+        let birthMonth = document.getElementById("dob-month").value;
+        let birthYear = document.getElementById("dob-year").value;
 
-    // your code here
+        let today = new Date();
+        let year = today.getFullYear();
+        let month = today.getMonth() + 1;
+
+        console.log(month);
+
+        let day = today.getDate();
+        console.log(day);
+
+
+        let age = year - birthYear;
+        if ( (month >= birthMonth) || ((month = birthMonth) && (day >= birthDay)) ) {
+            window.alert("You are " + age + " y.old!" );
+        } else {
+            window.alert("You are " + (age - 1) + " y.old!" )
+        }
+    });
+
 
 })();
