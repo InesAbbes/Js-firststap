@@ -39,6 +39,26 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        // display in the console, one after the other (use a forEach)
+        let nameTogether = "";
+
+        people.forEach(myFunction);
+
+        function myFunction(item) {
+            nameTogether += " " + item["firstname"]
+        }
+
+        // remove not necessary first white space
+        nameTogether = nameTogether.slice(1);
+
+        // display the result
+        console.log(nameTogether);
+        alert(nameTogether)
+
+
+    });
 
 })();
+
