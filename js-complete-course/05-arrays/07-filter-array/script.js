@@ -88,6 +88,13 @@
             age: 81,
         },
     ];
+     document.getElementById("run").addEventListener("click" , function () {
+         // function to check if the person age is more than 18 years.
+             function checkAdult(item) {
+                 return item.age >= 18;
+             }
+                 let adults = people.filter(checkAdult);
+                 console.log(adults)
 
     // your code here
 

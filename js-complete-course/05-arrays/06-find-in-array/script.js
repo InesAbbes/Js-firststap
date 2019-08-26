@@ -89,6 +89,21 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        // function to check if the person has the name Jean Dupont
+        function findTheguy(person){
+            return person.firstname === "Jean" && person.lastname === "Dupont";
+        }
+
+        // find the guy and put him in variable 'he'
+        let he = people.find(findTheguy);
+        console.log(he.email);      // show the guy's email in console
+        alert(people.indexOf(he));  // show his index with alert window
+
+    });
+
+
 
 })();
+
