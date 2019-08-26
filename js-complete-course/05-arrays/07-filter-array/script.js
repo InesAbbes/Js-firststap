@@ -96,6 +96,7 @@
                  let adults = people.filter(checkAdult);
                  console.log(adults)
 
-    // your code here
+
+         })
 
 })();
