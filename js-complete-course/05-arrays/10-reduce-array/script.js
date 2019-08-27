@@ -88,7 +88,10 @@
             age: 81,
         },
     ];
+document.getElementById("run").addEventListener("click" ,function () {
 
-    // your code here
+        let sumAge= people.reduce((x,y)=> x + y.age, 0);
+        console.log(sumAge);
+})
 
 })();
