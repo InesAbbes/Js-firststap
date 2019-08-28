@@ -10,7 +10,17 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    let image = document.getElementsByTagName("img")[0];
+    console.log(image.value);
+    //hovering over the img.
+    image.addEventListener("mouseover", function() {
+        image.setAttribute("src", "../../_shared/img/kiss-wink-heart.svg");
+        image.setAttribute("alt", "kiss-wink-heart");
+    });
+    // NOT hovering over the img.
+    image.addEventListener("mouseout", function() {
+        image.setAttribute("src", "../../_shared/img/kiss.svg");
+        image.setAttribute("alt", "kiss");
+    });
 
 })();
