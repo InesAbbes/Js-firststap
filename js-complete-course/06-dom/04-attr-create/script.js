@@ -10,6 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+    //Get the value of the "data-image" attribute from the element with id "source"
+    let valueSource = document.getElementById("source").getAttribute("data-image");
 
+    // Create a new image element inside the target element.
+    // that displays the image referred to by the attribute value.
+    let image = document.createElement("img");
+    image.setAttribute("src",valueSource);
+    //console.log(document.getElementById("target"))
+    document.getElementById("target").appendChild(image);
+    // Then remove the original element.
+    document.getElementById("source").remove();
 
 })();
