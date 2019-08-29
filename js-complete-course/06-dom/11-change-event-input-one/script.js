@@ -9,8 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  let input =document.getElementById("pass-one");
+   let counter=document.getElementById("counter");
 
-    // your code here
+   input.setAttribute("maxlength" ,"10");
+
+    input.addEventListener("input", function () {
+       counter.innerHTML =input.value.length +"/10";
+    });
 
 })();
