@@ -10,7 +10,22 @@
 // You will have time to focus on it later.
 
 (function() {
+    let i = 0;
+    let text = document.getElementById("target").innerText;
+    //console.log(text)
+    let speed = 50;
+    document.getElementById("target").innerHTML="";
 
-    // your code here
+    function typewriter(){
+        if (i < text.length){
+            document.getElementById("target").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typewriter, speed);
+        }
+    }
+
+    typewriter();
+
 
 })();
+
