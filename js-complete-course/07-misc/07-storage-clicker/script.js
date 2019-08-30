@@ -11,6 +11,18 @@
 
 (function() {
 
-    // your code here
+var target = document.getElementById("target");
+var buttom = document.getElementById("increment");
+var count = window.localStorage.getItem("counter");
+target.innerHTML = count;
 
+    if(target.innerHTML=""){
+        target.innerHTML = 0;
+    }
+buttom.addEventListener("click" , function(){
+    count++;
+    target.innerHTML =count;
+    window.localStorage.setItem("couter" , count);
+
+});
 })();
