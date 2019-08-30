@@ -12,6 +12,4 @@
     let targets = document.querySelectorAll(".target");
     targets.forEach(element => { element.innerHTML = "owned";
     });
-
-
 })();
