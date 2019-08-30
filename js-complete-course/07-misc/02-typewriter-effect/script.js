@@ -12,7 +12,6 @@
 (function() {
     let i = 0;
     let text = document.getElementById("target").innerText;
-    //console.log(text)
     let speed = 50;
     document.getElementById("target").innerHTML="";
 
