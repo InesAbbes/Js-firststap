@@ -11,6 +11,30 @@
 
 (function() {
 
-    // your code here
+    let random = Math.floor(Math.random() * 100) + 1; //X
+    console.log(random);
 
+    let guess = 1;
+    var ok ;
+
+do {
+
+    let number = prompt("Guess a number between 1 and 100"); //Y
+
+    if (number === random) {
+        alert("you won ");
+        ok = true;
+
+    }
+    else if (random < number) {
+        alert("higher");
+        ok = false
+    }
+    else{
+        guess ++;
+        alert("lower");
+        ok = false;
+    }
+}
+while (ok === false)
 })();
