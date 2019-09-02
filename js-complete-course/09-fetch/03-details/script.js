@@ -10,5 +10,29 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    fetch("http://localhost:63342/Js-firststap/js-complete-course/_shared/api.json")
+
+        .then(function(response) {
+            return response.json();
+        })
+
+        .then(function(list) {
+            let target = document.getElementById("target");
+            let input = document.getElementById("hero-id");
+            let tmp = document.getElementById("tpl-hero");
+            let name = tmp.content.querySelector("strong");
+            let alterEgo = tmp.content.querySelector("em");
+            var powers = tmp.content.querySelector("p");
+
+            document.getElementById("run").addEventListener("click", function () {
+                let i = input.value - 1;
+                name.innerHTML = list.heroes[i].name ;
+                alterEgo.innerHTML = list.heroes[i].alterEgo ;
+                powers.innerHTML = list.heroes[i].abilities ;
+
+
+                var clone = tmp.content.cloneNode(true);
+                target.appendChild(clone);
+            });
+        });
 })();
