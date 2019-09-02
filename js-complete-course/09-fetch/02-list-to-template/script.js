@@ -10,5 +10,26 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+document.getElementById("run").addEventListener("click", function () {
+
+      fetch("http://localhost:63342/Js-firststap/js-complete-course/_shared/api.json")
+          .then(function (response) {
+                return response.json();
+                  })
+
+                  .then(function (data) {
+                        console.log(data);
+                        data.heroes.forEach(function (hero) {
+                            const tmpl = document.getElementById('tpl-hero').content.cloneNode(true);
+                            tmpl.querySelector('.name').innerText = hero.name;
+                            tmpl.querySelector('.alter-ego').innerText = hero.alterEgo;
+                            tmpl.querySelector('.powers').innerText = hero.abilities;
+
+
+  document.getElementById("target").appendChild(tmpl);
+  });
+
+ });
+ });
+  })();
+
