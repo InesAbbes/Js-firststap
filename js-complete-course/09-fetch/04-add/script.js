@@ -24,7 +24,6 @@
                            "name": heroName,
                            "alterEgo":  ego,
                            "abilities": powers,});
-
                  console.log(list.heroes);
     });
      });

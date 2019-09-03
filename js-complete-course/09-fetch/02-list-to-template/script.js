@@ -25,7 +25,6 @@ document.getElementById("run").addEventListener("click", function () {
                             tmpl.querySelector('.alter-ego').innerText = hero.alterEgo;
                             tmpl.querySelector('.powers').innerText = hero.abilities;
 
-
   document.getElementById("target").appendChild(tmpl);
   });
 

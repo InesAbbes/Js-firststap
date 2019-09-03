@@ -15,7 +15,6 @@
         .then(function(response) {
             return response.json();
         })
-
         .then(function(list) {
             let target = document.getElementById("target");
             let input = document.getElementById("hero-id");
