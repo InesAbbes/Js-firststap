@@ -10,5 +10,20 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    fetch ("http://localhost:63342/Js-firststap/js-complete-course/_shared/api.json")
+        .then(function (response) {
+            return response.json();
+        })
+
+        .then(function (data) {
+
+document.getElementById("run").addEventListener("click",function () {
+
+    let display = parseInt(document.getElementById("hero-id").value);
+
+    data.heroes.splice(display-1,1);
+
+    console.log(data);
+});
+ });
 })();
