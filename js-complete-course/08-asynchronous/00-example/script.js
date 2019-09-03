@@ -20,7 +20,6 @@
             intervals = intervals.filter(clearInterval);
             console.clear();
         }
-
         intervals.push(setupIntervalMessage("one", 1000));
         intervals.push(setupIntervalMessage("two", 1333));
         intervals.push(setupIntervalMessage("three", 2500));
