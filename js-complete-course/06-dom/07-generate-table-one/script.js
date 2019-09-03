@@ -16,7 +16,6 @@
     let table = document.createElement("table");
 
     table.setAttribute("id", "myTable");
-
     table.setAttribute("border",1);
     target.appendChild(table);
 
