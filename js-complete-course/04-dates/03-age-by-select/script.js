@@ -23,15 +23,14 @@
         console.log(month);
 
         let day = today.getDate();
+
         console.log(day);
 
         let age = year - birthYear;
-        if ( (month >= birthMonth) || ((month = birthMonth) && (day >= birthDay)) ) {
+        if ( (month >= birthMonth) || ((month = birthMonth) && (day >= birthDay))) {
             alert("You are " + age + " y.old!" );
         } else {
-            alert("You are " + (age - 1) + " y.old!" )
+            alert("You are " + (age - 1) + " y.old!")
         }
     });
-
-
 })();
