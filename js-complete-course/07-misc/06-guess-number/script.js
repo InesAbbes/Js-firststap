@@ -8,33 +8,30 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
 (function() {
 
-    let random = Math.floor(Math.random() * 100) + 1; //X
-    console.log(random);
-
+    let random = Math.floor(Math.random() * 100 + 1);//X
     let guess = 1;
-    var ok ;
+    let ok;
 
-do {
-
-    let number = prompt("Guess a number between 1 and 100"); //Y
-
-    if (number === random) {
-        alert("you won ");
-        ok = true;
-
+    do {
+        let number = prompt("Guess a number between 1 and 100:", "");//Y
+        if(number === random) {
+            alert("You won" + guess + " GUESSES ");
+            ok = true;
+        }
+        else if(number > random){
+            guess++;
+            alert("Higher");
+            ok = false;
+        }
+        else{
+            guess++;
+            alert("Lower");
+            ok = false;
+        }
     }
-    else if (random < number) {
-        alert("higher");
-        ok = false
-    }
-    else{
-        guess ++;
-        alert("lower");
-        ok = false;
-    }
-}
-while (ok === false)
+    while (ok === false);
+
+
 })();

@@ -10,7 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
+    Array.from(document.getElementById("buttom")).forEach((function ()
+    {
+        var inputField = element.parentElement.getElementsByTagName()
+    }
 
-    // your code here
-
-})();
+    }));

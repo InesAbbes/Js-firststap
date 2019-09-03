@@ -22,7 +22,7 @@
             let tmp = document.getElementById("tpl-hero");
             let name = tmp.content.querySelector("strong");
             let alterEgo = tmp.content.querySelector("em");
-            var powers = tmp.content.querySelector("p");
+            let powers = tmp.content.querySelector("p");
 
             document.getElementById("run").addEventListener("click", function () {
                 let i = input.value - 1;

@@ -23,9 +23,11 @@
 
     let formatted_date= days[today.getDay()]     + " "       // Sunday
         + today.getDate() + " "                              // 28
-        + months[today.getMonth()] + " "                     // OctoberDay
+        + months[today.getMonth()] + " "                     // October
         + today.getFullYear()+ ", "                           // 2018
         + ("0"+today.getHours()).slice(-2).toString() + "h"+ ("0"+today.getMinutes()).slice(-2).toString(); // 23h02
+
+    //console.log(formatted_date);
 
     document.getElementById("target").innerHTML = formatted_date ;
 

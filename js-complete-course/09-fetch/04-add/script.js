@@ -8,7 +8,6 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
 (() => {
     fetch ("http://localhost:63342/Js-firststap/js-complete-course/_shared/api.json")
         .then(function (response) {

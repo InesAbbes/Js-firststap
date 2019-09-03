@@ -18,7 +18,7 @@
             let randomnr = Math.floor((Math.random() * 100) + 1);
             numbers.push(randomnr);
             let newId = "n-" + i;   //console.log(numbers);
-            document.getElementById(newId).innerHTML = randomnr;
+            document.getElementById()newId.innerHTML = randomnr;
         }
         document.getElementById("min").innerHTML = Math.min(...numbers);
         document.getElementById("max").innerHTML = Math.max(...numbers);

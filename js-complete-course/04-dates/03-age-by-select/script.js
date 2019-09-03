@@ -25,7 +25,6 @@
         let day = today.getDate();
         console.log(day);
 
-
         let age = year - birthYear;
         if ( (month >= birthMonth) || ((month = birthMonth) && (day >= birthDay)) ) {
             alert("You are " + age + " y.old!" );
