@@ -10,5 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+document.getElementById("run").addEventListener("click", function () {
+   window.lib.getPosts() //you call promise in this file
+       .then(function (list) { // we have to use .then , to specify what needs to happen when promise is returned
+           console.log(list);// we need to show the list in console.
+           return list ;// return to activate the function .
+
+       });
+});
 })();
