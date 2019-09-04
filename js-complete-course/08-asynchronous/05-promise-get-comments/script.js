@@ -10,5 +10,24 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click",function () {
+
+        window.lib.getPosts()
+            .then(function (resolved) {
+                console.log(resolved);
+
+                resolved.forEach(function (post) { // perform a forEach loop on the array "resolved"
+                    window.lib.getComments().then(function(addComment) { // then fetch another promis,in Comments
+                        let comments = addComment[post.id];
+                        if (comments !== undefined) {
+                            post.comment = comments;
+                        }
+                        console.log(post);
+                    });
+                });
+            });
+
+
+    });
 })();
